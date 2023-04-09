@@ -1,0 +1,88 @@
+﻿USE [DorukCase]
+GO
+/****** Object:  Table [dbo].[tblStopovers]    Script Date: 9.04.2023 14:30:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tblStopovers](
+	[reason] [nvarchar](50) NULL,
+	[start] [nvarchar](50) NULL,
+	[end] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[tblWorkOrders]    Script Date: 9.04.2023 14:30:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tblWorkOrders](
+	[id] [int] NULL,
+	[start] [nvarchar](50) NULL,
+	[end] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 10:00:00', N'1.01.2017 10:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Arıza', N'1.01.2017 10:30:00', N'1.01.2017 11:00:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 12:00:00', N'1.01.2017 12:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 14:00:00', N'1.01.2017 14:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Setup', N'1.01.2017 15:00:00', N'1.01.2017 16:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 18:00:00', N'1.01.2017 18:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 20:00:00', N'1.01.2017 20:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'1.01.2017 22:00:00', N'1.01.2017 22:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Arge', N'1.01.2017 23:00:00', N'2.01.2017 08:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'2.01.2017 10:00:00', N'2.01.2017 10:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'2.01.2017 12:00:00', N'2.01.2017 12:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Arıza', N'2.01.2017 13:00:00', N'2.01.2017 13:45:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'2.01.2017 14:00:00', N'2.01.2017 14:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'2.01.2017 18:00:00', N'2.01.2017 18:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Arge', N'2.01.2017 20:00:00', N'3.01.2017 02:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 04:00:00', N'3.01.2017 04:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Setup', N'3.01.2017 06:00:00', N'3.01.2017 09:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 10:00:00', N'3.01.2017 10:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 12:00:00', N'3.01.2017 12:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 14:00:00', N'3.01.2017 14:10:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Arıza', N'3.01.2017 15:00:00', N'3.01.2017 18:45:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 20:00:00', N'3.01.2017 20:30:00')
+GO
+INSERT [dbo].[tblStopovers] ([reason], [start], [end]) VALUES (N'Mola', N'3.01.2017 22:00:00', N'3.01.2017 22:10:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1001, N'1.01.2017 08:00:00', N'1.01.2017 16:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1002, N'1.01.2017 16:00:00', N'2.01.2017 00:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1003, N'2.01.2017 00:00:00', N'2.01.2017 08:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1004, N'2.01.2017 08:00:00', N'2.01.2017 16:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1005, N'2.01.2017 16:00:00', N'3.01.2017 00:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1006, N'3.01.2017 00:00:00', N'3.01.2017 08:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1007, N'3.01.2017 08:00:00', N'3.01.2017 16:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1008, N'3.01.2017 16:00:00', N'4.01.2017 00:00:00')
+GO
+INSERT [dbo].[tblWorkOrders] ([id], [start], [end]) VALUES (1009, N'4.01.2017 00:00:00', N'4.01.2017 08:00:00')
+GO
